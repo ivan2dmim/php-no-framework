@@ -21,7 +21,7 @@ if ($environment !== 'production') {
 }
 $whoops->register();
 
-$injector = include('Dependencies.php');
+$injector = include 'Dependencies.php';
 
 $request = $injector->make('Http\HttpRequest');
 $response = $injector->make('Http\HttpResponse');
